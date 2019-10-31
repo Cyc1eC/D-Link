@@ -32,7 +32,7 @@ SERVICES=DEVICE.ACCOUNT&aaa=%0aAUTHORIZED_GROUP=1
 
 
 
-![image-20191031111027019](.\image-20191031111027019.png)
+![image-20191031111027019](./image-20191031111027019.png)
 
 可以读任意.xml.php文件
 
@@ -78,7 +78,7 @@ SERVICES=DEVICE.ACCOUNT&aaa=%0aAUTHORIZED_GROUP=1
 
 * else var pwd = "<? echo $_GET["password"];?>"; 构造即可直接触发
 
-![image-20191031111539987](.\image-20191031111539987.png)
+![image-20191031111539987](./image-20191031111539987.png)
 
 
 
@@ -114,4 +114,4 @@ Upgrade-Insecure-Requests: 1
 ACTION=langclear
 ```
 
-![image-20191031205417181](.\image-20191031205417181.png)
+![image-20191031205417181](./image-20191031205417181.png)
