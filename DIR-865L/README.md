@@ -76,7 +76,7 @@ We can arbitrarily include all files ending in .xml.php,suce as DEVICE.ACCOUNT.x
 			var BODY = new Body();	
 ```
 
-* else var pwd = "<? echo $_GET["password"];?>"; We can construct the value of password arbitrarily
+``` else var pwd = "<? echo $_GET["password"];?>"; ``` We can construct the value of password arbitrarily
 if we send data : </script><script>alear(document.cookie)</script><script> we can get the cookie of Admin
 
 ![image-20191031111539987](https://github.com/Cyc1eC/D-Link/blob/master/DIR-865L/image-20191031111539987.png)
