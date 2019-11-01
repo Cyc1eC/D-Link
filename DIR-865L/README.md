@@ -1,4 +1,4 @@
-###  Local File Include
+### 1. Local File Include
 
 getcfg.php
 
